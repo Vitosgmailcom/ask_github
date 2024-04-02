@@ -16,7 +16,9 @@ jobs:
           python-version: "3.10"
       - name: Setup dependencies
         run: pip install -r requirements.txt
+      - name: Ls files
+        run: ls
       - name: Setup ENV
-        run: . env_github/bin/activate
+        run: . ./env_github/bin/activate
       - name: Setup ENV variables
         run: . .env.sh
