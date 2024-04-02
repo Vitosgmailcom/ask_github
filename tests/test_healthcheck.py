@@ -10,6 +10,6 @@ def test_healthcheck():
 
 @pytest.mark.tcid1
 def test_check_ENV():
-    env_db = os.environ['DB_NAME']
-    log.info(env_db)
+    # env_db = os.getenv('GITHUB_REPOSITORY_OWNER')
+    log.info(os.getenv('GITHUB_REPOSITORY_OWNER'))
 
