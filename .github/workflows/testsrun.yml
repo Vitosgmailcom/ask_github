@@ -3,6 +3,9 @@ name: AutoTest
 on:
   push
 
+env:
+  db_name: "ASK_DATABASe"
+
 jobs:
   test:
     runs-on: ubuntu-latest
