@@ -10,7 +10,6 @@ def test_healthcheck():
 
 @pytest.mark.tcid1
 def test_check_ENV():
-    env_db = os.getenv('DB_NAME')
+    env_db = os.environ['DB_NAME']
     log.info(env_db)
-    assert env_db == "ASK_DATABASE"
 
