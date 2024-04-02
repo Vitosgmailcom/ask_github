@@ -12,5 +12,5 @@ def test_healthcheck():
 def test_check_ENV():
     # env_db = os.getenv('GITHUB_REPOSITORY_OWNER')
     log.info(os.environ.get('db_user'))
-    log.info(os.getenv('db_user'))
+    log.info(os.environ['db_user'])
     log.info(os.getenv('PERFLOG_LOCATION_SETTING'))
