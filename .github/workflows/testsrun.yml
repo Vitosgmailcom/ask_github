@@ -25,4 +25,4 @@ jobs:
       - name: Setup ENV
         run: . env_github/bin/activate
       - name: Setup ENV variables
-        run: . .env.sh
+        run: . env.sh
