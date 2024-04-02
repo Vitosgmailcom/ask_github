@@ -1,4 +1,6 @@
 ## Automated tests
+name: First Auto Tests with GitHub Actions
+
 on:
   push
 
