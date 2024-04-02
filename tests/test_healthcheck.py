@@ -10,7 +10,7 @@ def test_healthcheck():
 
 @pytest.mark.tcid1
 def test_check_ENV():
-    env_db = os.environ['db_user']
+    env_db = os.getenv('db_user')
     log.info(os.environ.get('db_user'))
     log.info(env_db)
     log.info(os.getenv('PERFLOG_LOCATION_SETTING'))
