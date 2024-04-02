@@ -25,8 +25,8 @@ jobs:
       - name: Setup ENV
         run: . env_github/bin/activate
       - name: Setup ENV variables
-        run: |
-          . env.sh
-          env
+        run: . env.sh develop
+      - name: Check ENV
+        run: env
       - name: Run test
         run: pytest -m tcid1
