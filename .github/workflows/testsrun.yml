@@ -4,7 +4,7 @@ on:
   push
 
 env:
-  db_user: "Vitos"
+  db_user: "Vitos_from_GitHub"
 
 jobs:
   test:
