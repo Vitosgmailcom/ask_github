@@ -4,7 +4,7 @@ on:
   push
 
 env:
-  db_name: "ASK_DATABASe"
+  db_name: ${{ secrets.DB_NAME }}
 
 jobs:
   test:
