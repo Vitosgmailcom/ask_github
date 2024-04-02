@@ -1,4 +1,6 @@
 
+from Utility.credentialsUtility import credentialsDB
+
 import pytest
 import logging as log
 import os
@@ -10,5 +12,8 @@ def test_healthcheck():
 
 @pytest.mark.tcid1
 def test_check_ENV():
-    env_db = os.getenv('db_user')
+    cred_db = credentialsDB()
+    env_db = cred_db['db_user']
     log.info(env_db)
+
+
