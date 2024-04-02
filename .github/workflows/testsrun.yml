@@ -28,3 +28,5 @@ jobs:
         run: |
           . env.sh
           env
+      - name: Run test
+        run: pytest -m tcid1
