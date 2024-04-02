@@ -1,5 +1,4 @@
-## Automated tests
-name: First Auto Tests with GitHub Actions
+name: AutoTest
 
 on:
   push
@@ -9,15 +8,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Python
+      - name: install Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.9"
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+          python-version: "3.10"
+      - name: Setup dependencies
+        run: python install -r requirements.txt
+      - name: Setup ENV variables
+        run: sudo source env.sh
       - name: Run tests
-        run: pytest -m tcid0
-
-
+        run: pytest -m tcid1
