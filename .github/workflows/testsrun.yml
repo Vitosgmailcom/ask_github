@@ -16,9 +16,11 @@ jobs:
           python-version: "3.10"
       - name: Setup dependencies
         run: pip install -r requirements.txt
-      - name: Ls files
-        run: ls
+      - name: Install Python3 venv
+        run: sudo apt install python3-venv
+      - name: Create ENV
+        run: python3 -m venv env_github
       - name: Setup ENV
-        run: . ./env_github/bin/activate
+        run: . /env_github/bin/activate
       - name: Setup ENV variables
         run: . .env.sh
