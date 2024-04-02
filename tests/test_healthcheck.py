@@ -12,4 +12,5 @@ def test_healthcheck():
 def test_check_ENV():
     env_db = os.environ.get('DB_NAME')
     log.info(env_db)
+    assert env_db == "ASK_DATABASE"
 
