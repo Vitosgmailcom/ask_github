@@ -17,6 +17,6 @@ jobs:
       - name: Setup dependencies
         run: pip install -r requirements.txt
       - name: Setup ENV variables
-        run: sudo source env.sh
+        run: sudo . env.sh
       - name: Run tests
         run: pytest -m tcid1
